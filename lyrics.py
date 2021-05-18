@@ -1,7 +1,7 @@
 # import necessary packages
 import spotipy
 import spotipy.util as util
-from config import USERNAME, SPOTIPY_CLIENT_ID, SPOTIPY_CLIENT_SECRET, SPOTIPY_REDIRECT_URI
+from config.config import USERNAME, SPOTIPY_CLIENT_ID, SPOTIPY_CLIENT_SECRET, SPOTIPY_REDIRECT_URI
 
 # Set the scope for the script
 scope = 'user-read-currently-playing'
