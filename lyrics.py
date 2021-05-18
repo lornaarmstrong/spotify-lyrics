@@ -3,7 +3,7 @@ import spotipy
 import spotipy.util as util
 from config.config import USERNAME, SPOTIPY_CLIENT_ID, SPOTIPY_CLIENT_SECRET, SPOTIPY_REDIRECT_URI
 
-# Set the scope for the script
+# set the scope for the script
 scope = 'user-read-currently-playing'
 
 token = util.prompt_for_user_token(USERNAME, scope, client_id=SPOTIPY_CLIENT_ID,
@@ -18,7 +18,7 @@ if token:
     artist = current_song['item']['artists'][0]['name']
     name_song = current_song['item']['name']
 
-    print("Currently Playing:  " + artist, name_song)
+    print("Currently Playing:  " + name_song + " by " + artist)
 
 else:
     print("Can't get token for", USERNAME)
